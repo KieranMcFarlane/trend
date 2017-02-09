@@ -593,7 +593,7 @@ display: none;
 
 /*Header Section Styles*/
 header{
-  background-image: url(../img/top-background.jpg);
+  background-image: url(../img/handbag.jpg);
   height: 100vh;
   background-size: cover;
   min-height: 32rem;
@@ -915,6 +915,7 @@ header .button {
 
 .why-trend{
   background-color: #282d38;
+  padding-bottom: 5.375rem;
 }
 
 .why-trend h2{
@@ -2154,3 +2155,44 @@ body.sticky .popup-content {
 
 
 
+.list ul li span{
+  margin-right: 1rem;
+}
+
+.quote-ref{
+  color: #fff;
+  text-align: center;
+  position: relative;
+  left: 0.4em;
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.quotes {
+    width: 50%;
+}
+
+.center-parent{
+  display: table;
+}
+
+.center-child{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.quotes .special-para{
+  line-height: 2.625rem;
+  font-size: 1.5rem;
+  padding: 2.625rem;
+  padding-top: 0;
+}
+
+.quote-ref{
+  max-width: 440px;
+  margin: 0 auto;
+  line-height: 1.9rem;
+}
