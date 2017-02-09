@@ -124,7 +124,31 @@ inviteButton.magnificPopup({
 
         e.preventDefault();
     });
+
+
+
+
+
     
+
+  var videoPreview = $('.section__video .preview');
+
+  videoPreview.on('click', function() {
+    var $this = $(this),
+      video = $this.parent('.section__video'),
+      src = video.data('youtube-src'),
+
+      newIframe = $('<iframe src="' + src + '" frameborder="0" allowfullscreen=""></iframe>');
+    
+    video.addClass('loading');
+    video.find('.video').addClass('active').append(newIframe);
+  });
+
+
+
+
+
+
 //   /*
 //    * Accordion
 //    */
@@ -144,5 +168,6 @@ inviteButton.magnificPopup({
   //      venueMapButton.text('Hide the Agenda');
   //    }
   // }); 
+
 
 })(jQuery);

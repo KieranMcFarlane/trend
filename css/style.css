@@ -915,7 +915,7 @@ header .button {
 
 .why-trend{
   background-color: #282d38;
-  padding-bottom: 5.375rem;
+  padding-bottom: 8.075rem;
 }
 
 .why-trend h2{
@@ -1068,10 +1068,23 @@ header .button {
   filter: grayscale(100%);
 }
 
+.circle + h2, .circle-2 + h2, .circle-3 + h2{
+  margin-bottom: 3px;
+}
+
+.speaker-block h2.circle-company-name{
+  line-height: inherit;
+  font-size: 1.1rem;
+  color: #606060;
+  letter-spacing: -0.5px;
+  margin-top: 0;
+}
+
+
 .circle{
   width: 100%;
   height: 0;
-  background-image: url(../img/full/Layer14.png);
+  background-image: url(../img/speakers/diana.jpg);
   border-radius: 50rem;
   padding-bottom: 100%;
   background-position: center left 60%;
@@ -1082,7 +1095,7 @@ header .button {
 .circle-2{
   width: 100%;
   height: 0;
-  background-image: url(../img/full/michelle.jpg);
+  background-image: url(../img/speakers/chris.jpg);
   border-radius: 50rem;
   padding-bottom: 100%;
   background-position: center;
@@ -1093,7 +1106,7 @@ header .button {
 .circle-3{
   width: 100%;
   height: 0;
-  background-image: url(../img/saverio.jpg);
+  background-image: url(../img/speakers/question.png);
   border-radius: 50rem;
   padding-bottom: 100%;
   background-position: center;
@@ -1105,6 +1118,10 @@ header .button {
 .twitter-pos{
   position: relative;
   top: 0.125rem;
+}
+
+.tba .fa-twitter, .tba .fa-linkedin {
+  color: #b0b0b0;
 }
 
 .speakers li{
@@ -2195,4 +2212,131 @@ body.sticky .popup-content {
   max-width: 440px;
   margin: 0 auto;
   line-height: 1.9rem;
+}
+
+
+
+
+
+
+
+
+
+&__video {
+  position: relative;
+  width: 100%;
+  min-height: rem-calc(515);
+
+  .preview {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    cursor: pointer;
+    transition: all 1s;
+
+    &::after {
+      content: url('../images/icon-play.png');
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: rem-calc(-100);
+      margin-top: rem-calc(-100);
+
+      transition: all .2s ease-in-out;
+    }
+
+    &:hover::after {
+      transform: scale(1.02);
+    }
+  }
+
+  &.loading {
+    .preview {
+      opacity: 0.5;
+    }
+  }
+
+  iframe {
+    width: 100%;
+    min-height: rem-calc(515);
+  }
+
+  .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    &.active {
+      z-index: 999;
+    }
+  }
+}
+
+
+
+
+.section__featured .section__video{
+  display: block;
+}
+
+
+.desc-sec{
+  padding-top: 5.625rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ * Make videos responsive
+ */
+
+.section--recipes {
+  .section__featured.with-video, .section__video, .section__video iframe {
+    min-height: rem-calc(300);
+
+    @include break(xsmall) { min-height: rem-calc(300); }
+    @include break(small) { min-height: rem-calc(400); }
+    @include break(medium) { min-height: rem-calc(552); }
+  }
+
+  .section__video .preview::after {
+    transform: scale(0.5);
+
+    @include break(medium) {
+      transform: scale(1);
+    }
+  }
+}
+
+.section--lifestyle {
+  .section__featured, .section__featured.with-video, .section__video, .section__video iframe {
+    min-height: rem-calc(300);
+
+    @include break(small) { min-height: rem-calc(400); }
+    @include break(medium) { min-height: rem-calc(552); }
+  }
+
+  .section__video .preview::after {
+    transform: scale(0.5);
+
+    @include break(medium) {
+      transform: scale(1);
+    }
+  }
 }
