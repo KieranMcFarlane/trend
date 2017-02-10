@@ -2393,14 +2393,14 @@ p.venue-title + p.venue-title{
 
  .section__featured {
   position: relative;
-  min-height: rem-calc(200);
+  min-height: 200px;
 }
   
 
 
   @media (min-width: 61.25em) {
     .section__featured {
-    min-height: rem-calc(330);
+    min-height: 330px;
     }
   }
 
@@ -2427,7 +2427,7 @@ p.venue-title + p.venue-title{
  .section__video {
   position: relative;
   width: 100%;
-  min-height: rem-calc(515);
+  min-height: 515px;
 }
 
   
@@ -2448,8 +2448,8 @@ p.venue-title + p.venue-title{
       position: absolute;
       top: 50%;
       left: 50%;
-      margin-left: rem-calc(-100);
-      margin-top: rem-calc(-100);
+      margin-left: -100px;
+      margin-top: -100px;
 
       transition: all .2s ease-in-out;
   }
@@ -2467,7 +2467,7 @@ p.venue-title + p.venue-title{
 
    .section__video iframe {
     width: 100%;
-    min-height: rem-calc(515);
+    min-height: 515px;
   }
 
   .section__video .video {
