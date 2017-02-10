@@ -205,9 +205,8 @@ jQuery(function($) {
     var $this = $(this),
       video = $this.parent('.section__video'),
       src = video.data('youtube-src'),
-
-      newIframe = $('<iframe src="' + src + '" frameborder="0" allowfullscreen=""></iframe>');
-    
+      newIframe = $('<iframe src="' + src + '?rel=0&showinfo=0&autoplay=1' +'" frameborder="0" allowfullscreen=""></iframe>');
+    console.log(src);
     video.addClass('loading');
     video.find('.video').addClass('active').append(newIframe);
   });

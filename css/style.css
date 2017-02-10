@@ -2404,7 +2404,7 @@ p.venue-title + p.venue-title{
     }
   }
 
-   .section__featured .full-width-image, > div {
+  .full-width-image {
     position: absolute;
     top: 0;
     left: 0;
