@@ -98,11 +98,11 @@
 				<h2>How are luxury brands appealing to millennial consumers using digital platforms and storytelling?</h2>
 				<p class="date">12.11.15
 </p>
-				<p>The evolution of digital has completely changed the way users consume information. The millennial generation is quickly entering its prime in terms of spending power. In years gone by, the predominant channel for discovery was through a window display, then it was a brand's website and now its social media and influencers, especially when considering luxury brands. 
+				<p>The evolution of digital has completely changed the way users consume information. The millennial generation is quickly entering its prime in terms of spending power. In years gone by, the predominant channel for discovery was through a window display, then it was a brand's website and now its social media and influencers, especially when considering luxury brands.</p>
 
-				As digital consultant Rachel Arthur says: “There’s no such thing [as just being] on social media. There’s an inherent need for both quality and relevance in what is posted, in order to get through to the right consumers at the right time. As a result, authenticity is paramount.”
+				<p>As digital consultant Rachel Arthur says: “There’s no such thing [as just being] on social media. There’s an inherent need for both quality and relevance in what is posted, in order to get through to the right consumers at the right time. As a result, authenticity is paramount.”</p>
 
-				Immediately brands can gauge what people like and they don’t, as Christopher Bailey references, “the data gathered by the brand allows his team to understand how their products are received and what resonated most with their customers”.</p>
+				<p>Immediately brands can gauge what people like and they don’t, as Christopher Bailey references, “the data gathered by the brand allows his team to understand how their products are received and what resonated most with their customers”.</p>
 <p>Join us for an evening of insightful discussion about how brands can appeal to millennial consumers through digital platforms and storytelling</p>
 				
 
@@ -159,6 +159,10 @@
 							<li><span>20.00 - 20.30</span> Panel discussion</li>
 							<li><span>20.30 - 21.00</span> Networking drinks</li>
 						</ul>
+
+
+						<div class="tickets" style="width:100%; text-align:left;"><iframe src="//eventbrite.co.uk/tickets-external?eid=31752405299&ref=etckt" frameborder="0" height="425" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:12px; padding:10px 0 5px; margin:2px; width:100%; text-align:left;" ><a class="powered-by-eb" style="color: #ADB0B6 ; text-decoration: none;" target="_blank" href="http://www.eventbrite.co.uk/">Powered by Eventbrite</a></div></div>
+
 					</div>
 				</section>
 
@@ -191,7 +195,6 @@
 <div class="section__featured">
 <object class="section__video" style="width:100%;height:100%;width: 820px; height: 461.25px; float: none; clear: both; margin: 2px auto;" data="https://drive.google.com/file/d/0B7F4g6-QwJinR2d5XzRwOFZkcnc/preview">
 
-
 	
 	<div class="video"></div>
 	<div class="preview">
@@ -200,11 +203,6 @@
 	</div>
 </object>
 </div>
-
-
-
-
-
 
 			<div class="wrap clearfix center-parent desc-sec">
 				
@@ -275,15 +273,20 @@
 			</div>
 			<div class="venue-subinfo">
 			<h2 class="side-header">The Venue</h2>
-			<p class="venue-title">WeWork Southbank</p>
-			<p class="address">22 Upper Ground, London SE1 9PD</p>
+			<p class="venue-title">WeWork</p>
+			<p class="venue-title no-wrap">WaterHouse Square</p>
+			<p class="address">Building No. 2</p>
+			<p class="address">138 Holborn, London</p>
+			<p class="address">EC1N 2SW</p>
 			<p class="date">12.11.15</p>
 			<a class="button" href="#" target="_blank">View Map</a>
 			<a class="mobile-button" href="https://www.google.co.uk/maps/place/22+Upper+Ground,+London+SE1/@51.508215,-0.1067903,17z/data=!3m1!4b1!4m2!3m1!1s0x487604b1b882903d:0x3017a7f9395735f1" target="_blank">View Map</a>
 			</div>
 		</div>
 
-        <a href="https://www.google.co.uk/maps/place/22+Upper+Ground,+London+SE1/@51.508215,-0.1067903,17z/data=!3m1!4b1!4m2!3m1!1s0x487604b1b882903d:0x3017a7f9395735f1" target="_blank"><div class="map"></div></a>
+        <a><!-- <div class="map"></div> --><div class="map" id="map"></div></a>
+
+
 	</section>
 
 
@@ -332,6 +335,64 @@
 		</div>
 	</div>
 </footer>
-<script src="js/rwd-dist.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1n6Gdwu3VihYvIoxH2196noWweFua4O0&callback=initMap"
+async defer></script>
+<script>
+var map;
+     function initMap() {
+
+       var mapContainer = $(this),
+       	lat = 51.518215,
+       	lng = -0.109891,
+       	mapCenter = { lat: lat, lng: lng },
+       	// markerImage = 'http://'+document.location.host+'/wp-content/themes/valence/assets/images/marker.png',
+       	markerImage = '../img/b-marker.png'
+       	isDraggable = $(document).width() > 480 ? true : false; // If document (your website) is wider than 480px, isDraggable = true, else isDraggable = false
+
+       map = new google.maps.Map(document.getElementById('map'), {
+       	zoom: 16,
+       	center: mapCenter,
+       	disableDefaultUI: true,
+       });
+
+       map.setOptions({ draggable: isDraggable, zoomControl: true, scrollwheel: false, disableDoubleClickZoom: false});
+
+
+       var styles = [
+       	{
+           featureType: "road",
+           elementType: "geometry",
+           stylers: [
+             { visibility: "simplified" }
+           ]
+         },{
+           featureType: "road",
+           elementType: "labels",
+           stylers: [
+             { visibility: "on" }
+           ]
+         }
+       ];
+
+       map.setOptions({styles: styles});
+
+       var marker = new google.maps.Marker({
+       	position: mapCenter,
+       	map: map,
+       	icon: markerImage
+       });
+
+
+
+
+
+
+
+
+
+
+     }
+</script>
+<script src="js/rwd.js"></script>
 </body>
 </html>

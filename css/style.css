@@ -1232,7 +1232,7 @@ header .button {
   font-size: 1.5rem;
   line-height: 3rem;
   margin-top: -1.5rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1.15rem;
 
 }
 
@@ -2291,10 +2291,24 @@ body.sticky .popup-content {
 
 
 
+   #map {
+        // height: 100%;
+        // width: 100%;
+      }
 
 
 
+.side-header + p.venue-title{
+  margin: 0;
+}
 
+.no-wrap{
+  white-space: nowrap;
+}
+
+p.venue-title + p.venue-title{
+  margin-top: 0;
+}
 
 
 
