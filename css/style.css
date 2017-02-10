@@ -2320,37 +2320,165 @@ p.venue-title + p.venue-title{
  * Make videos responsive
  */
 
-.section--recipes {
-  .section__featured.with-video, .section__video, .section__video iframe {
-    min-height: rem-calc(300);
 
-    @include break(xsmall) { min-height: rem-calc(300); }
-    @include break(small) { min-height: rem-calc(400); }
-    @include break(medium) { min-height: rem-calc(552); }
-  }
+// @media (min-width: 30em)    { .section--recipes .section__featured.with-video, .section--recipes .section__video, .section--recipes .section__video iframe { min-height: rem-calc(300); } }
+// @media (min-width: 46.25em) { .section--recipes .section__featured.with-video, .section--recipes .section__video, .section--recipes .section__video iframe { min-height: rem-calc(400); } }
+// @media (min-width: 61.25em) { .section--recipes .section__featured.with-video, .section--recipes .section__video, .section--recipes .section__video iframe { min-height: rem-calc(552); } }
 
-  .section__video .preview::after {
-    transform: scale(0.5);
+// .section--recipes .section__video .preview::after { transform: scale(0.5); }
 
-    @include break(medium) {
-      transform: scale(1);
-    }
-  }
+//  @media (min-width: 61.25em) { .section--recipes .section__video .preview::after {transform: scale(1);}}
+
+
+
+
+ .section__featured.with-video,  .section__video,   .section__video iframe { min-height: rem-calc(300); }
+@media (min-width: 46.25em) {   .section__featured.with-video,   .section__video,   .section__video iframe { min-height: rem-calc(400); } }
+@media (min-width: 61.25em) {   .section__featured.with-video,   .section__video,   .section__video iframe { min-height: rem-calc(552); } }
+
+  .section__video .preview::after { transform: scale(0.5); }
+
+ @media (min-width: 61.25em) {   .section__video .preview::after {transform: scale(1);}}
+
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
 }
 
-.section--lifestyle {
-  .section__featured, .section__featured.with-video, .section__video, .section__video iframe {
-    min-height: rem-calc(300);
 
-    @include break(small) { min-height: rem-calc(400); }
-    @include break(medium) { min-height: rem-calc(552); }
-  }
 
-  .section__video .preview::after {
-    transform: scale(0.5);
 
-    @include break(medium) {
-      transform: scale(1);
+ 
+// Should generally only needs small/medium/large, but extra sizes put in for more precise media queries
+  // $susy-media: (
+  //   all:  'only screen',   // Mobiles
+  //   xsmall: em-calc(480),  // 30em - Landscape / Big mobiles
+  //   small:  em-calc(740),  // 46.25em - iPad/Tablets
+  //   medium: em-calc(980),  // 61.25em - Laptops
+  //   large:  em-calc(1200),   // 75em - Desktops / Larger than container
+  //   xlarge: em-calc(1680),   // 105em - Widescreens
+  // );
+
+ //xsmall  @media (min-width: 30em) { ... }
+ //small  @media (min-width: 46.25em) { ... }
+ //medium  @media (min-width: 61.25em) { ... }
+ //small  @media (min-width: 75em) { ... }
+ //small  @media (min-width: 105em) { ... }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section {
+  padding-bottom: 5rem;
+}
+
+ .section__featured {
+  position: relative;
+  min-height: rem-calc(200);
+}
+  
+
+
+  @media (min-width: 61.25em) {
+    .section__featured {
+    min-height: rem-calc(330);
     }
   }
+
+   .section__featured .full-width-image, > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+  }
+
+   .section__featured .section.empty {
+    min-height: 4rem !important;
+  }
+
+
+
+
+ .section__video {
+  position: relative;
+  width: 100%;
+  min-height: rem-calc(515);
 }
+
+  
+ .section__video .preview {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    cursor: pointer;
+    transition: all 1s;
+}
+
+    
+ .section__video::after {
+      content: url('../images/icon-play.png');
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: rem-calc(-100);
+      margin-top: rem-calc(-100);
+
+      transition: all .2s ease-in-out;
+  }
+
+    
+ .section__video:hover::after {
+      transform: scale(1.02);
+    }
+
+
+
+     .section__video .loading .preview {
+      opacity: 0.5;
+    }
+
+   .section__video iframe {
+    width: 100%;
+    min-height: rem-calc(515);
+  }
+
+  .section__video .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .section__video .video.active {
+    z-index: 999;
+  }
+

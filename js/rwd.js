@@ -201,6 +201,7 @@ jQuery(function($) {
   var videoPreview = $('.section__video .preview');
 
   videoPreview.on('click', function() {
+    console.log('preview clicked');
     var $this = $(this),
       video = $this.parent('.section__video'),
       src = video.data('youtube-src'),
