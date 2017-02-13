@@ -84,6 +84,7 @@ jQuery(function($) {
   });
 
   jumpLinks('#intro');
+  jumpLinks('#next-event');
  
 
 
@@ -218,6 +219,7 @@ $(document).ready(function(){
       src = video.data('youtube-src'),
       newIframe = $('<iframe src="' + src + '?rel=0&showinfo=0&autoplay=1' +'" frameborder="0" allowfullscreen=""></iframe>');
     console.log(src);
+    $('full-width-image with-video').fadeOut(800);
     video.addClass('loading');
     video.find('.video').addClass('active').append(newIframe);
   });
