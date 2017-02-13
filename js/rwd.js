@@ -297,10 +297,10 @@ rabs.find('a').off().on('click', function(e){
 
 
 $(window).resize(function(){
-    $("#speakers").accordion("refresh");
+    $("#speakers-mob").accordion("refresh");
 });
 
-$( "#speakers" ).accordion({
+$( "#speakers-mob" ).accordion({
   collapsible: true,
   header: ".headerfile",
   animate: {
@@ -313,10 +313,10 @@ $( "#speakers" ).accordion({
 });
 
 // Getter
-var header = $( "#speakers" ).accordion( "option", "header" );
+var header = $( "#speakers-mob" ).accordion( "option", "header" );
  
 // Setter
-$( "#speakers" ).accordion( "option", "header", ".headerfile" );
+$( "#speakers-mob" ).accordion( "option", "header", ".headerfile" );
 
 
 
