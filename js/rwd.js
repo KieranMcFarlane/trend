@@ -178,23 +178,23 @@ $(document).ready(function(){
     * Agenda
     */
 
-    var accordion = $('.accordion'),
-        accordionTitle = accordion.find('.title p');
-        accordionList = accordion.find('.list');
+    // var accordion = $('.accordion'),
+    //     accordionTitle = accordion.find('.title p');
+    //     accordionList = accordion.find('.list');
 
-    accordion.click(function(e){
-        accordionList.stop(false, true).slideToggle(function(){
-            if (accordion.hasClass('open')) {
-                accordionTitle.text('Show the Agenda');
-            } else {
-                accordionTitle.text('Hide the Agenda');
-            }
+    // accordion.click(function(e){
+    //     accordionList.stop(false, true).slideToggle(function(){
+    //         if (accordion.hasClass('open')) {
+    //             accordionTitle.text('Show the Agenda');
+    //         } else {
+    //             accordionTitle.text('Hide the Agenda');
+    //         }
 
-            accordion.toggleClass('open');
-        });
+    //         accordion.toggleClass('open');
+    //     });
 
-        e.preventDefault();
-    });
+    //     e.preventDefault();
+    // });
 
 
 
