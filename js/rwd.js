@@ -291,7 +291,7 @@ rabs.find('a').off().on('click', function(e){
 
   newRab.siblings(':visible').fadeOut('fast');
 
-    newRab.slideToggle(1000, "linear");
+    newRab.slideToggle(900, "linear");
 
 });
 
