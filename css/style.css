@@ -2306,7 +2306,7 @@ body.sticky .popup-content {
 }
 
 p.venue-title + p.venue-title{
-  margin-top: 0;
+  margin-top: -0.2rem;
 }
 
 
@@ -2600,4 +2600,14 @@ ul.s-icons{
 
 .rab h2{
   letter-spacing: 0.2em;
+}
+
+.contact-cont{
+  margin-top: 2.7rem;
+}
+
+.contact-cont p{
+  margin-bottom: 0;
+  margin-top: 0.7rem;
+  font-size: 15px;
 }
