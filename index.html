@@ -57,12 +57,13 @@
 			<div class="navmenu-outer">
 				<div class="navmenu-container">
 					<ul id="opennav" class="navmenu" data-magellan data-options="animationEasing:easeInOutSine" data-animation-duration="1220" data-bar-offset="57">
-						<li><a href="#intro" class="active">Intro</a></li>
-						<li><a href="#next-event">Next Event</a></li>
-						<li><a href="#why-trend">Why Trend</a></li>
-						<li><a href="#speakers">Speakers</a></li>
-						<li><a href="#the-venue">The Venue</a></li>
-						<li><a href="#our-partners">Our Partners</a></li>
+						<li><a href="#intro" class="active jump-link">Intro</a></li>
+						<li><a href="#next-event" class="jump-link">Next Event</a></li>
+						<li><a href="#why-trend" class="jump-link">Why Trend</a></li>
+						<li class="hidden-on-desktop"><a href="#speakers-mob" class="jump-link">Speakers</a></li>
+						<li class="hidden-on-mobile"><a href="#speakers-dsk" class="jump-link">Speakers</a></li>
+						<li><a href="#the-venue" class="jump-link">The Venue</a></li>
+						<li><a href="#our-partners" class="jump-link">Our Partners</a></li>
 					</ul>
 					</div>
 				</div>
@@ -83,7 +84,7 @@
 		<img src="img/Trend-top.png" alt="" class="logo">
 		<p>A collection of events to inspire luxury &amp; lifestyle brands and cultivate digital excellence.  
 </p>
-		<a href="#next-event" class="button">Our Next Event</a>
+		<a href="#next-event" class="button jump-link">Our Next Event</a>
 
 	</div>
 </header>
@@ -219,7 +220,7 @@
         </div>
 	</section>
 
-		<section class="speakers clearfix desktop">
+		<section class="speakers clearfix desktop" id="speakers-dsk">
 			<div class="bg-white"></div>
 			<div class="wrap">
 				<h2>Speakers</h2>
@@ -283,7 +284,7 @@
 
 
 
-		<section class="speakers clearfix mobile" id="speakers">
+		<section class="speakers clearfix mobile" id="speakers-mob">
 			<div class="bg-white"></div>
 			<div class="wrap">
 				<h2>Speakers</h2>
@@ -328,18 +329,6 @@
 				</div>
 			</div>
 		</section>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -390,11 +379,17 @@
 		<div class="wrap">
 			<h2>Stay on Trend</h2>
 			<p>Keep updated with the latest luxury industry news and expertise with the Trend newsletter.  Enter your email address below to stay ahead of the curve.</p>
-			<form action="http://verbbrands.us11.list-manage.com/subscribe/post" method="POST">
+			<form action="//verbbrands.us11.list-manage.com/subscribe/post?u=1f39308beca25e3fb5dd84696&amp;id=914f503bda" method="POST">
                 <input type="hidden" name="u" value="1f39308beca25e3fb5dd84696">
                 <input type="hidden" name="id" value="3a444e2162"> 
 				<input type="email" placeholder="Email Address" name="MERGE0" id="MERGE0">
 			</form>
+
+
+
+
+
+
 		</div>
 	</section>
 </section>

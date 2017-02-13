@@ -1,7 +1,7 @@
 !function ($) {
 
   "use strict";
-
+  
   var FOUNDATION_VERSION = '6.2.4';
 
   // Global Foundation object

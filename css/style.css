@@ -842,7 +842,6 @@ header .button {
   line-height: 1.5rem;
   border-bottom: 0.0625rem #ccc solid;
   max-width: 31.25rem;
-  cursor: pointer;
   overflow: hidden;
 }
 
@@ -865,7 +864,7 @@ header .button {
 }
 
 .accordion .list{
-  // display: none;
+  // display: none; 
   margin: 0;
   padding: 0;
 }
@@ -2487,7 +2486,7 @@ p.venue-title + p.venue-title{
 }
 
 .speakers.desktop h2:first-child {
-  text-align: center;
+  text-align: left;
 }
 
   .rabs{
@@ -2579,4 +2578,21 @@ ul.s-icons{
 .ticket-section{
   background: #f8f8fa;
   padding-bottom: 6.625rem;
+}
+
+@media (min-width: 700px) {
+  #opennav li.hidden-on-mobile{
+    display: list-item;
+  }
+  #opennav li.hidden-on-desktop{
+    display: none;
+  }
+}
+
+#opennav li.hidden-on-desktop{
+  display: list-item;
+}
+
+#opennav li.hidden-on-mobile{
+  display: none;
 }
