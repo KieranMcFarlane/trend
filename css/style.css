@@ -865,7 +865,7 @@ header .button {
 }
 
 .accordion .list{
-  display: none;
+  // display: none;
   margin: 0;
   padding: 0;
 }
