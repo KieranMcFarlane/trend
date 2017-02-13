@@ -2411,7 +2411,7 @@ p.venue-title + p.venue-title{
     right: 0;
     bottom: 0;
     
-
+    cursor: pointer;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
@@ -2482,3 +2482,100 @@ p.venue-title + p.venue-title{
     z-index: 999;
   }
 
+.speakers.desktop{
+  padding-bottom: 6.625rem;
+}
+
+.speakers.desktop h2:first-child {
+  text-align: center;
+}
+
+  .rabs{
+    margin: 0;
+  }
+
+  .rab p{
+    margin-bottom: 0;
+  }
+
+  ul.rabs li{
+    display: block;
+    float: left;
+    width: 27.333333333%;
+    margin-right: 9%;
+    text-align: center;
+  }
+
+  ul.rabs li .speaker-block{
+    float: none;
+    width: 100%;
+    margin-right: 0;
+  }
+
+
+ul.s-icons{
+  display: inline-block;
+  padding-left: 0;
+}
+
+  ul.s-icons li{
+        font-family: "SSSocialRegular";
+        color: #333;
+        list-style-type: none;
+        display: inline-block;
+        margin-right: 1.6875rem;
+        float: left;
+        width: initial;
+    }
+
+  ul.s-icons li:last-child{
+    margin-right: 0;
+  }
+
+
+    .speakers.desktop {
+    display: none;
+    }
+    .speakers.mobile {
+    display: block;
+    }
+
+
+  @media (min-width: 700px) {
+    .speakers.desktop {
+    display: block;
+    }
+    .speakers.mobile {
+    display: none;
+    }
+  }
+
+
+
+
+
+
+.center-parent .center-child{
+  width: 100%;
+  display: block;
+}
+
+@media (min-width: 1000px) {
+  .quotes {
+      width: 50%;
+  }
+
+  .desk-sec.center-parent{
+    display: table;
+  }
+
+  .center-parent .center-child{
+    width: 50%;
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+.ticket-section .blogwrap-title h2{
+  text-align: center;
+}
