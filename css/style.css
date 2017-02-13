@@ -2485,7 +2485,7 @@ p.venue-title + p.venue-title{
   padding-bottom: 4.625rem;
 }
 
-.speakers.desktop h2:first-child {
+.speakers.desktop .rab h2:first-child {
   text-align: left;
 }
 
@@ -2578,6 +2578,7 @@ ul.s-icons{
 .ticket-section{
   background: #f8f8fa;
   padding-bottom: 6.625rem;
+  padding-top: 2.5rem;
 }
 
 @media (min-width: 700px) {
@@ -2595,4 +2596,8 @@ ul.s-icons{
 
 #opennav li.hidden-on-mobile{
   display: none;
+}
+
+.rab h2{
+  letter-spacing: 0.2em;
 }
