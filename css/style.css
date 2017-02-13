@@ -2575,3 +2575,8 @@ ul.s-icons{
 .ticket-section .blogwrap-title h2{
   text-align: center;
 }
+
+.ticket-section{
+  background: #f8f8fa;
+  padding-bottom: 6.625rem;
+}
