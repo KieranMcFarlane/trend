@@ -2551,15 +2551,6 @@ ul.s-icons{
   }
 
 
-.tickets iframe{
-  min-height: 432px;
-}
-.tickets iframe body{
-  background: transparent !important;
-}
-
-
-
 .center-parent .center-child{
   width: 100%;
   display: block;
