@@ -2617,6 +2617,10 @@ ul.s-icons{
   font-size: 15px;
 }
 
+.contact-cont p:nth-child(3){
+  margin-top: 0.3rem;
+}
+
 .contact-cont p:last-of-type{
   margin-top: 0.3rem;
 }
