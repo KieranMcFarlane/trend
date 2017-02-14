@@ -1989,7 +1989,7 @@ header .strip-parent > .strip > .bg-img {
   width: 37.5rem ; 
 }
 .venue .bg-strip .strip-parent > .strip > .bg-img {
-  background: url(../img/south-bank.jpg) no-repeat center center fixed;
+  background: url(../img/waterhouse-square.jpg) no-repeat center center fixed;
   box-shadow: inset 0.6875rem 0.8125rem 1.6875rem -1.3125rem rgba(0,0,0,0.75);
   background-size: cover;
   color: #fff;
