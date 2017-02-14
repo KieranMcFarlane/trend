@@ -2648,3 +2648,13 @@ div.logo-title p:nth-child(3){
   padding-top: 0em;
   margin-top: 8px;
 }
+
+
+button.no-pad{
+  padding: 0;
+}
+
+button.no-pad a{
+  display: block;
+  padding: 2rem;
+}
