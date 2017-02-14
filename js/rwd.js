@@ -85,6 +85,7 @@ jQuery(function($) {
 
   jumpLinks('#intro');
   jumpLinks('#next-event');
+  jumpLinks('#ticket-drop');
  
 
 
@@ -237,23 +238,23 @@ $(document).ready(function(){
  * Register popup
  */
 
-var inviteButton = $('.invite-popup .button'),
-    $body = $('body');
+// var inviteButton = $('.invite-popup .button'),
+//     $body = $('body');
 
-inviteButton.magnificPopup({
-  type: 'inline',
-  mainClass: 'mfp-fade',
+// inviteButton.magnificPopup({
+//   type: 'inline',
+//   mainClass: 'mfp-fade',
 
-  callbacks: {
-    open: function() {
-      $body.addClass('invite-open');
-    },
+//   callbacks: {
+//     open: function() {
+//       $body.addClass('invite-open');
+//     },
 
-    close: function() {
-      $body.removeClass('invite-open');
-    }
-  }
-});
+//     close: function() {
+//       $body.removeClass('invite-open');
+//     }
+//   }
+// });
 
 
 
