@@ -108,9 +108,15 @@ h2{
   font-size: 1.5rem;
   line-height: 6rem;
   letter-spacing: 0.8em;  
+  // text-indent: 0.4em;
   text-transform: uppercase;
   color: #333;
   font-weight: 400;
+}
+
+.ticket-section h2{
+  letter-spacing: 0.8em;  
+  text-indent: 0.4em;
 }
 
 /*Button Styles*/
@@ -2212,6 +2218,18 @@ body.sticky .popup-content {
   padding-top: 0;
 }
 
+@media (max-width: 600px) {
+  .wrap.clearfix.center-parent.desc-sec{
+    padding: 0;
+  }
+  .quotes .special-para {
+    padding: 0;
+    padding-bottom: 2.625rem;
+  }
+}
+
+
+
 .quote-ref{
   max-width: 440px;
   margin: 0 auto;
@@ -2658,3 +2676,63 @@ button.no-pad a{
   display: block;
   padding: 2rem;
 }
+
+.venue-subinfo a.button{
+  color: white;
+}
+
+a.mobile-button{
+  color: white;
+}
+
+.venue-title.no-wrap{
+  display: none;
+}
+
+.venue-title.mobile-show{
+  display: inherit;
+}
+
+
+
+@media (max-width: 865px){
+    p.venue-title.mobile-show{
+      line-height: 1.5;
+      margin-bottom: 3rem;
+    }
+
+    .venue-subinfo .venue-title {
+      padding: 1rem;
+    }
+}
+
+
+@media (min-width: 865px){
+  .venue-title.mobile-show{
+    display: none;
+  }
+
+  .venue-title.no-wrap{
+    display: inherit;
+    margin-bottom: 24px;
+  }
+}
+
+
+#speakers-mob ul{
+  padding-left: 0;
+}
+
+@media (max-height: 590px){
+
+  #opennav li a {
+    font-size: 15px;
+    line-height: 0;
+  }
+
+  #opennav li {
+      padding-bottom: 0;
+      padding-top: 7px;
+  }
+}
+
