@@ -281,10 +281,18 @@ $(document).ready(function(){
 
 var rabs = $('.rabs');
 
+$verb = $('ul.rab li a');
+
+console.log($verb);
+
 $('.rab').hide();
 
 rabs.find('a').off().on('click', function(e){
-  e.preventDefault();
+if (!$(this).hasClass("twitter-pos") ) {
+	if (!$(this).hasClass("linked-pos") ) {
+		e.preventDefault();
+	}
+}
   // rabs.find('.current').removeClass('current');
   // $(this).addlass('current');
 
