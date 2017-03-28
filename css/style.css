@@ -18,10 +18,10 @@ html {
   overflow-x: hidden;
 }
 
-a.tweet-link{
-  color: rgba(157, 171, 255, 0.81);
-    text-decoration: underline;
-    letter-spacing: 0.05em;
+.tweet-link{
+  color: rgba(157, 171, 255, 0.81) !important;
+  text-decoration: underline;
+  letter-spacing: 0.05em;
 }
 
 body {
@@ -1599,9 +1599,9 @@ body .venue .bg-strip .strip-parent > .strip > .bg-img {
 .second-logo{
   width: 16.5rem;
   position: relative;
-  top: 4.525rem;
   display: inline-block;
-  padding: 2rem;
+  position: relative;
+  top: -5.8rem;
 }
 
 /*Our Partners Breakpoints*/
@@ -1624,6 +1624,8 @@ body .venue .bg-strip .strip-parent > .strip > .bg-img {
     width: 16.5rem;
     margin: 0 auto;
     display: block;
+    position: relative;
+    top: 1.125rem;
 }
 
 .partner-img {
