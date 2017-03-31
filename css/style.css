@@ -42,6 +42,7 @@ a:link,
 a:visited {
   text-decoration: none;
   color: #2c13cf;
+  cursor: pointer;
 }
 
 a:hover,
@@ -1100,10 +1101,10 @@ header .button {
 .circle{
   width: 100%;
   height: 0;
-  background-image: url(../img/speakers/diana.jpg);
+  background-image: url(../img/speakers/henry-kimber.jpg);
   border-radius: 50rem;
   padding-bottom: 100%;
-  background-position: center left 60%;
+  background-position: center left 50%;
   background-size: cover;
   box-shadow: inset 0px 0px 0px 0.625rem rgba(255,255,255,0.4);
 }
@@ -1577,55 +1578,59 @@ body .venue .bg-strip .strip-parent > .strip > .bg-img {
 
 /*Our Partners Styles*/
 
+#our-partners{
+  padding-bottom: 4rem;
+}
+
 .our-partners h2{
   text-align: center;
   padding-top: 5.375rem;
-  padding-bottom: 5.875rem;
+  // padding-bottom: 5.875rem;
   position: relative;
   left: 0.4em;
 }
 
-.partner-img{
-  text-align: center;
-  // padding-bottom: 14.375rem;
+// .partner-img{
+//   text-align: center;
+//   // padding-bottom: 14.375rem;
+// }
+
+.partner-img {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.partner-img div {
+    max-width: 250px;
+    padding: 20px;
+    margin: 0 auto;
+    // margin-bottom: 50px;
+}
+
 
 .partner-img:nth-of-type(2){
   text-align: center;
   padding-bottom: 14.375rem;
 }
 
-// .first-logo{
-//   width: 12rem;
-//   margin-right: 13.5625rem;
-//   display: inline-block;
-// }
-
-// .second-logo{
-//   width: 16.5rem;
-//   position: relative;
-//   top: 4.525rem;
-//   display: inline-block;
-//   padding: 2rem;
-// }
-
-// .third-logo{
-//   width: 16.5rem;
-//   position: relative;
-//   top: 4.525rem;
-//   display: inline-block;
-//   padding: 2rem;
-// }
-
-// .fourth-logo{
-//   width: 16.5rem;
-//   position: relative;
-//   top: 4.525rem;
-//   display: inline-block;
-//   padding: 2rem;
-// }
 
 /*Our Partners Breakpoints*/
+
+@media(max-width: 48rem){
+    .partner-img div {
+      max-width: 250px;
+      padding: 20px;
+      margin: 0 auto;
+      margin-bottom: 50px;
+  }
+
+  .partner-img {
+      text-align: center;
+      display: block;
+  }
+}
 
 @media(max-width: 46.4375rem){
 
