@@ -1587,22 +1587,43 @@ body .venue .bg-strip .strip-parent > .strip > .bg-img {
 
 .partner-img{
   text-align: center;
+  // padding-bottom: 14.375rem;
+}
+
+.partner-img:nth-of-type(2){
+  text-align: center;
   padding-bottom: 14.375rem;
 }
 
-.first-logo{
-  width: 12rem;
-  margin-right: 13.5625rem;
-  display: inline-block;
-}
+// .first-logo{
+//   width: 12rem;
+//   margin-right: 13.5625rem;
+//   display: inline-block;
+// }
 
-.second-logo{
-  width: 16.5rem;
-  position: relative;
-  display: inline-block;
-  position: relative;
-  top: -5.8rem;
-}
+// .second-logo{
+//   width: 16.5rem;
+//   position: relative;
+//   top: 4.525rem;
+//   display: inline-block;
+//   padding: 2rem;
+// }
+
+// .third-logo{
+//   width: 16.5rem;
+//   position: relative;
+//   top: 4.525rem;
+//   display: inline-block;
+//   padding: 2rem;
+// }
+
+// .fourth-logo{
+//   width: 16.5rem;
+//   position: relative;
+//   top: 4.525rem;
+//   display: inline-block;
+//   padding: 2rem;
+// }
 
 /*Our Partners Breakpoints*/
 
@@ -1624,8 +1645,6 @@ body .venue .bg-strip .strip-parent > .strip > .bg-img {
     width: 16.5rem;
     margin: 0 auto;
     display: block;
-    position: relative;
-    top: 1.125rem;
 }
 
 .partner-img {
